@@ -28,8 +28,7 @@ steps:
       queue: default-windows
     plugins:
       https://github.com/chef/docker-buildkite-plugin#snappj/add-support-for-windows-images:
-        always-pull: true
-        image: "microsoft/dotnet-framework:4.7.1" # based on server container, includes dotnet correctly.
+        image: "chefes/buildkite-windows:latest"
         windows-image: true
 
 
